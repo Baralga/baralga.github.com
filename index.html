@@ -1,102 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Baralga, simple and lightweight open source time tracking</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Simple and lightweight open source time tracking for projects.">
-    <meta name="author" content="Jan Stamer">
 
-    <!-- Le styles -->
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Baralga, simple and lightweight open source time tracking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Simple and lightweight open source time tracking for projects.">
+  <meta name="author" content="Jan Stamer">
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
+  <!-- Le styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <style type="text/css">
+    body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
+
+    .jumbotron {
+      background-color: #6c757d;
+      color: whitesmoke;
+    }
+
+    .carousel-control-prev {
+      filter: invert(100%);
+    }
+    
+    .carousel-control-next {
+      filter: invert(100%);
+    }
+  </style>
+  <script src="https://unpkg.com/ionicons@4.5.10-1/dist/ionicons.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
       <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
-  </head>
+  <!-- Le fav and touch icons -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+</head>
 
-  <body style="background-image: url(img-custom/tile.gif);"> 	
-	  <a href="http://github.com/Baralga/baralga"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub"></a>
+<body>
+  <a href="http://github.com/Baralga/baralga"><img style="position: absolute; top: 0; right: 0; border: 0;"
+      src="https://github.blog/wp-content/uploads/2008/12/forkme_right_gray_6d6d6d.png?resize=149%2C149" alt="Fork me on GitHub"></a>
 
-    <div class="container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="jumbotron">
+          <h1 class="display-4">Baralga</h1>
+          <p  class="lead">Simple and lightweight time tracking.</p>
+          <p>Record the time spent on a project or manually enter and edit activities.</p>
+          <h2 class="display-6">Features</h2>
+          <ul>
+            <li style="line-height: 37px;">plain time tracking no fuzz</li>
+            <li style="line-height: 37px;">switch projects with tray icon</li>
+            <li style="line-height: 37px;">record your activities</li>
+            <li style="line-height: 37px;">report as Excel, <abbr title="Comma Separated Values">CSV</abbr> and
+              iCalendar</li>
+            <li style="line-height: 37px;">manually add and edit activities</li>
+            <li style="line-height: 37px;">enter data fast with shortcuts</li>
+          </ul>
+          <p>Baralga is open source and free forever. It is available as regular or portable version for the desktop.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6" align="center" style="vertical-align: middle;">
 
-      <div class="row">
-          <div class="span5">
-		      <div class="hero-unit">
-            <h1>Baralga</h1>
-            <p>Simple and lightweight time tracking.</p>
-            <p>Record the time spent on a project or manually enter and edit activities.</p>
-            <h2>Features</h2>
-            <ul style="font-size: 18px; font-weight: 200;">
-              <li style="line-height: 37px;">plain time tracking no fuzz</li>
-              <li style="line-height: 37px;">switch projects with tray icon</li>
-              <li style="line-height: 37px;">record your activities</li>
-              <li style="line-height: 37px;">report as Excel, <abbr title="Comma Separated Values">CSV</abbr> and iCalendar</li>
-              <li style="line-height: 37px;">manually add and edit activities</li>
-              <li style="line-height: 37px;">enter data fast with shortcuts</li>
-            </ul>
-            <p>Baralga is open source and free forever. It is available as regular or portable version for the desktop.</p>
+        <div id="screenshotIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#screenshotIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#screenshotIndicators" data-slide-to="1"></li>
+            <li data-target="#screenshotIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="img-custom/main-screen.png" alt="Baralga Main Screen" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img-custom/main-screen-projects.png" alt="Baralga Projects Screen" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="img-custom/sample-report.png" alt="Baralga Sample Report" />
+            </div>
           </div>
-        </div>
-	      <div class="span7" align="center" style="vertical-align: middle;">
-
-<div id="myCarousel" class="carousel">
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item"><img src="img-custom/main-screen.png" alt="Baralga Main Screen"/></div>
-    <div class="item"><img src="img-custom/main-screen-projects.png" alt="Baralga Projects Screen"/></div>
-    <div class="item"><img src="img-custom/sample-report.png" alt="Baralga Sample Report"/></div>
-  </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
-</div>
-		      
-
-	      </div>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-		<h2>Download</h2>
-		<p><a href="https://github.com/Baralga/baralga/releases/download/v1.8.3/Baralga-Installer-1.8.3.jar" class="btn btn-info"><i class="icon-download"></i> Baralga 1.8.3 Installer</a></p>
-		<p><a href="https://github.com/Baralga/baralga/releases/download/v1.8.3/Baralga-Portable-1.8.3.zip" class="btn btn-info"><i class="icon-download"></i> Baralga 1.8.3 Portable</a></p>
-		<p>Older versions are available from the <a href="https://github.com/Baralga/baralga/releases">archive</a>.</p>
-        </div>
-	<div class="span4">
-		<h2>Donate</h2>
-		<p>Make a small donation to support further development and to show your appreciation. Thanks!</p>
-	  	<p align="center"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4913649"><img src="img-custom/paypal-donate-button.png" alt="Donate via PayPal"/></a></p>
-       </div>
-        <div class="span4">
-          <h2>Contact</h2>
-          <p>Get in touch for infos and support. </p>
-	  <p><a href="mailto:baralga(AT)geekmail.de" class="btn"><i class="icon-envelope"></i> Mail to baralga(AT)geekmail.de ...</a></p>
-	  <p><a href="https://github.com/Baralga/baralga/issues" class="btn"><i class="icon-fire"></i> Create issue ...</a></p>
+          <a class="carousel-control-prev" href="#screenshotIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#screenshotIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
-	  
-      <hr>
+    </div>
 
-    </div><!-- /container -->
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Download</h2>
+        <p><a href="https://github.com/Baralga/baralga/releases/download/v1.8.3/Baralga-Installer-1.8.3.jar"
+            class="btn btn-primary"><ion-icon name="cloud-download"></ion-icon> Baralga 1.8.3 Installer</a></p>
+        <p><a href="https://github.com/Baralga/baralga/releases/download/v1.8.3/Baralga-Portable-1.8.3.zip"
+            class="btn btn-primary"><ion-icon name="cloud-download"></ion-icon> Baralga 1.8.3 Portable</a></p>
+        <p>Older versions are available from the <a href="https://github.com/Baralga/baralga/releases">archive</a>.</p>
+      </div>
+      <div class="col-md-4">
+        <h2>Donate</h2>
+        <p>Make a small donation to support further development and to show your appreciation. Thanks!</p>
+        <p align="center"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4913649" class="btn btn-info">
+          <ion-icon name="cash"></ion-icon> Donate via PayPal
+         </a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Contact</h2>
+        <p>Get in touch for infos and support. </p>
+        <p><a href="mailto:baralga(AT)geekmail.de" class="btn btn-secondary"><ion-icon name="mail"></ion-icon> Mail to
+            baralga(AT)geekmail.de ...</a></p>
+        <p><a href="https://github.com/Baralga/baralga/issues" class="btn btn-secondary"><ion-icon name="bug"></ion-icon> Create issue
+            ...</a></p>
+      </div>
+    </div>
+  </div><!-- /container -->
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+</body>
+
 </html>
-
